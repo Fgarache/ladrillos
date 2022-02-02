@@ -9,7 +9,7 @@ public class Ventana extends JFrame {
         setBackground(Color.red);
         setSize(640, 480);
         setLocation(500, 300);
-        add(new Lines());
+        add(new Cuvo());
         setVisible(true);
 
 
