@@ -1,7 +1,7 @@
 import java.awt.*;
 
-public class Cuvo extends Canvas {
-    public Cuvo() {
+public class Cubo1 extends Canvas {
+    public Cubo1() {
         setBackground(Color.red);
     }
 
@@ -23,8 +23,12 @@ public class Cuvo extends Canvas {
         for (int i = 10; i <= 310; i += 10) {
             //linea orizontal
             g.drawLine(10, 100 + i, 310, 100 + i);
-            g.drawLine(10 + i, 110 - i, 310 + i, 110 - i);
             g.drawLine(310, 100 + i, 410, i);
+
+            g.drawLine(10 + i / 3, 110 - i / 3, 310 + i / 3, 110 - i / 3);
+
+
+            //g.drawLine(10 + i, 110 - i, 310 + i, 110 - i);
 
         }
 
@@ -36,28 +40,15 @@ public class Cuvo extends Canvas {
                 g.drawLine(mas20, 100 + i + i, mas20, 110 + i + i);
 
 
-
-
+                g.drawLine(320, 110, 320, 100);
+                g.drawLine(330, 120, 320, 100);
+                g.drawLine(10 + mas20, 90 + i + i, 10 + mas20, 100 + i + i);
+                g.drawLine(mas20, 100 + i + i, mas20, 110 + i + i);
 
             }
 
         }
-        for (int i = 10; i <= 155; i += 10) {
-            for (int mas20 = 20; mas20 <= 300; mas20 += 20) {
-                //lineas arriba
-
-                g.drawLine(120, 20, 130, 10);
-                g.drawLine(100, 40, 110, 30);
-                g.drawLine(80, 60, 90, 50);
-                g.drawLine(60, 80, 70, 70);
 
 
-                g.drawLine(80 + mas20, 30, 90 + mas20, 20);
-
-
-                g.drawLine(310 + i, 110 - i, 310 + i, 120 - i);
-
-            }
-        }
     }
 }

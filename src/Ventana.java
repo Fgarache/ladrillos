@@ -7,9 +7,9 @@ public class Ventana extends JFrame {
         Canvas lienzo = new Canvas();
         Graphics g = lienzo.getGraphics();
         setBackground(Color.red);
-        setSize(640, 480);
+        setSize(1500, 1000);
         setLocation(500, 300);
-        add(new Cuvo());
+        add(new Cubo2());
         setVisible(true);
 
 

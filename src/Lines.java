@@ -28,7 +28,6 @@ public class Lines extends Canvas {
                 g.drawLine(30 + mas50, 20 + mas30 * 2, 30 + mas50, 50 + mas30 * 2);
             }
         }
-
     }
 }
 
